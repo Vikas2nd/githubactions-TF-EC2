@@ -14,7 +14,8 @@ jobs:
       AWS_SECRET_ACCESS_KEY: ${{ secret.AWS_DEVOPS_SECRET_ACCESS_KEY }}
     runs-on: ubuntu-latest
     environment: production
-steps:
+    
+    steps:
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
       uses: actions/checkout@v4
